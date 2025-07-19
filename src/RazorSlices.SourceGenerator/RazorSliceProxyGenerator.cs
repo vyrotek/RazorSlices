@@ -134,7 +134,7 @@ internal class RazorSliceProxyGenerator : IIncrementalGenerator
                     /// <summary>
                     /// Static proxy for the Razor Slice defined in <c>{{relativeFilePath}}</c>.
                     /// </summary>
-                    public sealed class {{className}} : global::RazorSlices.IRazorSliceProxy
+                    public partial class {{className}} : global::RazorSlices.IRazorSliceProxy
                     {
                         [global::System.Diagnostics.CodeAnalysis.DynamicDependency(global::System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All, TypeName, "{{assemblyName}}")]
                         private const string TypeName = "AspNetCoreGeneratedDocument.{{generatedTypeName}}, {{assemblyName}}";
